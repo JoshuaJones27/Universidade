@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dress Code</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="header"> 
+            <div class="header-left">
+                <div class="header-image">
+
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="header-title">Criação de Perfil</div>
+            </div>
+            <div class="header-right">
+                <div class="header-left-content">
+                    <div class="icons">
+                        <img src="./img/LogoUE.png" height="50px">
+                
+                        <a href="./criarconta.html">
+                            <img src="./img/LogoConta.png" height="40px">    
+                        </a>
+                    
+                        <a href="./index.html">
+                            <img src="./img/LogoFav.png" height="40px">
+                        </a>
+                        <a href="./index.html">
+                            <img src="./img/LogoCarrinho.png" height="40px">
+                        </a>
+                    </div>
+                    <div class="search-bar-container">
+                        <div class="search-button">
+                            <img src='img/LogoSearch.png' height="24px" width="24px"/>
+                        </div>
+                        <input type="text" class="search-input" placeholder="search">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="favorites">Seleciona o teu estilo:</div>
+            <form class="content-form">
+                <div class="form-check-boxes">
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="check1" onclick="selectOnlyThis(id)"> Classic
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="check2" onclick="selectOnlyThis(id)"> Streetwear
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="check3" onclick="selectOnlyThis(id)"> Sport
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="check4" onclick="selectOnlyThis(id)"> Creative
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="check5" onclick="selectOnlyThis(id)"> Elegant
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="check6" onclick="selectOnlyThis(id)"> Modern
+                    </label>
+                    <label class="checkbox-inline">
+                    <input type="checkbox" id="check7" onclick="selectOnlyThis(id)"> Vintage
+                    </label>
+                </div>
+                <div class="form-labels-container">
+                    <div class="form-labels-left">
+                        <div class="form-labels">
+                            <!-- <div class="form-label-text">A tua cor favorita</div> -->
+                            <div class="form-label-text" for="corFav">Cor Favorita</div>
+                            <div class="form-label-input">
+                                <!-- <input type="text" class="form-input"/> -->
+                                <select name="corFav" id="corFav">
+                                <option value="vermelho">Vermelho</option>
+                                <option value="azul">Azul</option>
+                                <option value="amarelo">Amarelo</option>
+                                <option value="verde">Verde</option>
+                                <option value="laranja">Laranja</option>
+                                <option value="roxo">Roxo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-labels">
+                            <div class="form-label-text">Idade</div>
+                            <div class="form-label-input">
+                                <input type="number" min="0" class="form-input"/>
+                            </div>
+                        </div>
+                        <div class="form-labels">
+                            <div class="form-label-text" for="genero">Género</div>
+                            <div class="form-label-input">
+                                <select name="genero" id="genero">
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                </select>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-labels-right">
+                        <div class="form-labels">
+                            <div class="form-label-text" for="estacao">Estação Anual Favorita</div>
+                            <div class="form-label-input">
+                                <select name="estacao" id="estacao">
+                                <option value="primavera">Primavera</option>
+                                <option value="verao">Verão</option>
+                                <option value="outono">Outono</option>
+                                <option value="inverno">Inverno</option>
+                                </select>   
+                            </div>
+                        </div>
+                        <div class="form-labels">
+                            <div class="form-label-text" for="roupa">Peça Roupa Favorita</div>
+                            <div class="form-label-input">
+                                <select name="roupa" id="roupa">
+                                <option value="calcas">Calças</option>
+                                <option value="camisas">Camisas</option>
+                                <option value="camisasPolo">Camisas Polo</option>
+                                <option value="casacos">Casacos</option>
+                                <option value="fitness">Fitness</option>
+                                <option value="jaquetas">Jaquetas</option>
+                                <option value="jeans">Jeans</option>
+                                <option value="malhas">Malhas</option>
+                                <option value="shorts">Shorts</option>
+                                <option value="ternos">Ternos</option>
+                                </select>   
+                            </div>
+                        </div>
+                        <div class="form-labels">
+                            <div class="form-label-text" for="marca">Marca Favorita</div>
+                            <div class="form-label-input">
+                                <select name="marca" id="marca">
+                                <option value="armani">Armani</option>
+                                <option value="fendi">Fendi</option>
+                                <option value="versace">Versace</option>
+                                <option value="burberry">Burberry</option>
+                                <option value="ralphLauren">Ralph Lauren</option>
+                                <option value="chanel">Chanel</option>
+                                <option value="prada">Prada</option>
+                                <option value="hermes">Hermes</option>
+                                <option value="gucci">Gucci</option>
+                                <option value="louisVuitton">Louis Vuitton</option>
+                                </select>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button">Guardar</button>
+            </form>
+        </div>
+
+        <div class="fim">
+            <footer>
+                <p>Copyright &copy; 2022 by FetchCode</p>
+            </footer>
+        </div>
+
+    <script src="./script.js"></script>
+    </body>
+</html>

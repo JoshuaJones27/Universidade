@@ -1,0 +1,249 @@
+* {
+    background: rgba(214, 214, 214, 0.801);
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100vw;
+    height: 20vh;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-left {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image {
+    background-image: url("./img/Logowebsite.png");
+    height: 50%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-center {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-right {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.search-bar-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button {
+    height: fit-content;
+}
+
+.search-input {
+    outline: none;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    margin-left: 1%;
+    border-radius: 10px;
+    padding-left: 4%;
+    box-sizing: border-box;
+    width: 10vw;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header-left-content {
+    width: 12vw;
+}
+
+/* ACABOU O HEADER */
+
+.content {
+    height: 78vh;
+    width: 98vw;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.favorites {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.content-form {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-check-boxes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    /* appearance: auto; */
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+    transform: scale(2);
+    padding: 10px;
+}
+
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+    margin-top: 0;
+}
+
+.checkbox-inline, .radio-inline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.form-labels-container {
+    margin-top: 5%;
+    width: 100%;
+    display: table;
+    flex-direction: row;
+}
+
+.form-labels-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.form-labels-right {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    text-align: left;
+}
+
+.border-item  {
+    width: 75%;
+    border: 1px solid #ccc;
+    border-width: thick;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.form-labels {
+    width: 50%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  
+
+.form-label-text {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.form-label-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+select {
+    border-width: 2px;
+    box-sizing: border-box;
+    font-size: 24px;
+    width: 80%;
+}
+
+.form-input {
+    box-sizing: border-box;
+    font-size: 24px;
+    width: 80%;
+}
+
+button {
+    background-color: grey;
+    border-color: black;
+    color: white;
+    border-width: 2px;
+    padding: 8px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: default;
+    font-size: 24px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    max-width: 139px;
+    border-style: none;
+    box-sizing: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; 
+    align-items: right;
+}
+
+.fim {
+    background: rgba(201, 198, 211, 0.801);
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float:center;
+    text-align: center;
+}
